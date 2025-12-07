@@ -16,26 +16,30 @@
     font-size: 1rem;
   }
 
-  /* NAVIGATION */
-  nav {
-    display: flex;
-    justify-content: center;
-    background: #2d3e50;
-    padding: 1rem;
-    gap: 2rem;
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
-  }
+ /* NAVIGATION — unified style across all pages */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #2d3e50;
+  padding: 1rem;
+  gap: 2rem; /* consistent with your other pages */
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem; /* sync with other tabs */
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: opacity 0.3s;
+}
 
-  nav a:hover {
-    text-decoration: underline;
-  }
+nav a:hover {
+  opacity: 0.8; /* exactly like your other pages */
+}
+
 
   /* HEADER WITH BACKGROUND */
   header {
