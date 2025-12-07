@@ -36,7 +36,7 @@
     header {
       text-align: center;
       padding: 4rem 2rem;
-      background: url('img/header-background_2.jpg') no-repeat center center;
+      background: url('img/header-background_1.jpg') no-repeat center center;
       background-size: cover;
       color: white;
       position: relative;
@@ -47,7 +47,7 @@
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.4); /* Overlay für bessere Lesbarkeit */
+      background: rgba(0,0,0,0.4); /* Overlay für Lesbarkeit */
       z-index: 0;
     }
 
@@ -64,7 +64,17 @@
       margin-bottom: 2rem;
     }
 
-    .project-logos img {
+    .logo-background {
+      background: white;
+      padding: 0.5rem 1rem; /* Abstand um die Logos */
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* optionaler Schatten */
+    }
+
+    .logo-background img {
       max-height: 80px;
       object-fit: contain;
     }
@@ -109,8 +119,7 @@
       header {
         padding: 3rem 1rem;
       }
-
-      .project-logos img {
+      .logo-background img {
         max-height: 60px;
       }
     }
@@ -132,8 +141,12 @@
   <header>
     <div class="header-content">
       <div class="project-logos">
-        <img src="img/UPICAS_LOGO_box.png" alt="UPICAS Project Logo" />
-        <img src="img/FNR_LOGO_BIG.png" alt="Funder Logo" />
+        <div class="logo-background">
+          <img src="img/UPICAS_LOGO_box.png" alt="UPICAS Project Logo" />
+        </div>
+        <div class="logo-background">
+          <img src="img/FNR_LOGO_BIG.png" alt="Funder Logo" />
+        </div>
       </div>
 
       <h1>
